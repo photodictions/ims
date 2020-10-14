@@ -131,9 +131,9 @@
                             <a class="nav-link" href="{{url('/')}}/contact">Contact</a>
                         </li>
                         
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{url('/parentregistration/registration')}}">Student Registration</a>
-                        </li>
+                        <!--<li class="nav-item">-->
+                        <!--    <a class="nav-link" href="{{url('/parentregistration/registration')}}">Student Registration</a>-->
+                        <!--</li>-->
                         <!--@if(App\SmGeneralSettings::isModule('ParentRegistration')== TRUE)
                             <li class="nav-item"><a class="nav-link"
                                 href="{{url('/parentregistration/registration')}}">Student Registration</a>

@@ -131,9 +131,9 @@
                             <a class="nav-link" href="<?php echo e(url('/')); ?>/contact">Contact</a>
                         </li>
                         
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo e(url('/parentregistration/registration')); ?>">Student Registration</a>
-                        </li>
+                        <!--<li class="nav-item">-->
+                        <!--    <a class="nav-link" href="<?php echo e(url('/parentregistration/registration')); ?>">Student Registration</a>-->
+                        <!--</li>-->
                         <!--<?php if(App\SmGeneralSettings::isModule('ParentRegistration')== TRUE): ?>
                             <li class="nav-item"><a class="nav-link"
                                 href="<?php echo e(url('/parentregistration/registration')); ?>">Student Registration</a>
