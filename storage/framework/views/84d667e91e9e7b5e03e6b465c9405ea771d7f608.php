@@ -17,7 +17,7 @@
     if (isset($setting->site_title) && !empty($setting->site_title)) {
         $site_title = $setting->site_title;
     } else {
-        $site_title = 'Infix Edu ERP';
+        $site_title = 'gehlotclasses Edu ERP';
     }
 
     if (isset($setting->favicon)) {
@@ -43,7 +43,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport"
-          content="Infix is 100+ unique feature enable school management software system. It can manage all type of school, academy and any educational institution"/>
+          content="gehlotclasses is 100+ unique feature enable school management software system. It can manage all type of school, academy and any educational institution"/>
     <link rel="icon" href="<?php echo e(asset($favicon)); ?>" type="image/png"/>
     <title><?php echo e(isset($page_title)? $page_title:$site_title); ?></title>
     <meta name="_token" content="<?php echo csrf_token(); ?>"/>
@@ -88,13 +88,14 @@
 
 <!--================ Start Header Menu Area =================-->
 <header class="header-area">
+<div class="container">
     <div class="main_menu">
         <nav class="navbar navbar-expand-lg navbar-light px-md-4 px-0">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <a class="navbar-brand" href="<?php echo e(url('/')); ?>/home">
-                    <!--<img class="w-75" src="<?php echo e(asset($logo)); ?>" alt="Infix Logo" style="max-width: 150px;">-->
-                    <img  src="https://ims.gehlotclasses.com/public/frontend/images/logo-beyond-learning-inverted.png" alt="Infix Logo" style="max-width: 200px;">
+                    <!--<img class="w-75" src="<?php echo e(asset($logo)); ?>" alt="gehlotclasses Logo" style="max-width: 150px;">-->
+                    <img  src="https://ims.gehlotclasses.com/public/frontend/images/logo-beyond-learning-inverted.png" alt="gehlotclasses Logo" style="max-width: 200px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -106,20 +107,22 @@
                     <ul class="nav navbar-nav menu_nav ml-auto">
                         <!--<li class="nav-item  <?php echo e(Request::path() == '/' ||  Request::path() == 'home'? 'active':''); ?> "><a
                                     class="nav-link" href="<?php echo e(url('/')); ?>/home">Home</a></li>-->
-                        <li class="nav-item <?php echo e(Request::path() == 'about'? 'active':''); ?>">
+                        <li class="nav-item active <?php echo e(Request::path() == 'about'? 'active':''); ?>">
                             <a class="nav-link" href="<?php echo e(url('/')); ?>/about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="javascript:void(0)">Result</a>
                         </li>
+						
+						
                         <li class="nav-item">
                             <a class="nav-link" href="javascript:void(0)">Scholarship</a>
                         </li>
-                        <li class="nav-item <?php echo e(Request::path() == 'course'? 'active':''); ?>"><a class="nav-link"
-                                                                                             href="<?php echo e(url('/')); ?>/course">Course</a>
+                        <li class="nav-item <?php echo e(Request::path() == 'course'? 'active':''); ?>">
+						<a class="nav-link" href="<?php echo e(url('/')); ?>/course">Course</a>
                         </li>
-                        <!--<li class="nav-item <?php echo e(Request::path() == 'news-page'? 'active':''); ?>"><a class="nav-link"
-                                                                                                href="<?php echo e(url('/')); ?>/news-page">News</a>
+                        <!--<li class="nav-item <?php echo e(Request::path() == 'news-page'? 'active':''); ?>">
+						<a class="nav-link" href="<?php echo e(url('/')); ?>/news-page">News</a>
                         </li>-->
                         <li class="nav-item">
                             <a class="nav-link" href="javascript:void(0)">Gallery</a>
@@ -152,13 +155,14 @@
             </div>
         </nav>
     </div>
+	</div>
 </header>
 <!--================ End Header Menu Area =================-->
 <?php echo $__env->yieldContent('main_content'); ?>
 
 <!--================Footer Area =================-->
 <footer class="footer_area bg-dark px-md-4 px-0 pt-5">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row footer_inner">
             <!--<?php if(isset($per["Custom Links"])): ?>
                 <?php
@@ -190,7 +194,7 @@
                 </div>
                 <?php } ?>
             <?php endif; ?>-->
-            <div class="col-lg-3 col-sm-6 col-12">
+            <div class="col-lg-4 col-sm-6 col-12">
                 <div class="footer-content">
                    <div class="footer-logo mb-3">
                        <img src="https://ims.gehlotclasses.com/public/frontend/images/logo-beyond-learning.png">
@@ -219,7 +223,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-12">
+            <div class="col-lg-2 col-sm-6 col-12">
                 <div class="footer-content">
                     <h2 class="text-white">Courses</h2>
                     <ul class="listunstyled">
@@ -308,6 +312,88 @@
 
 <?php echo $__env->yieldContent('script'); ?>
 
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+<style type="text/css">
+body.client{font-family:"Nunito", sans-serif; font-size:16px;}
+body{font-family:"Nunito", sans-serif}
+.client .header-area .navbar .nav .nav-item {margin-right:25px;}
+.client .header-area .navbar .nav .nav-item .nav-link{ font-weight:normal;}
+.main-title{ margin-bottom:0px; letter-spacing:0.5px; font-size:25px;}
+.course-card h3{font-size:22px;}
+.course-card h5{ font-size:14px; line-height:1; margin-bottom:0px;}
+.result-card .result-number h2{background:rgba(35,39,43,0.6)}
+.result-card .result-text h5{font-size:16px; color:#23272b !important; margin-bottom:0px;}
+.result-card .result-number{width:88px;}
+.result-card .result-text p a{color:#23272b;}
+.news-list{  border: 1px solid #c8ccce;  border-radius: 25px; }
+.client .news-item .news-text h4{ font-size:16px; font-weight:700;}
+.client .news-item .news-text .date{ padding:0 10px 3px 0px; color:#2896d4; border:#195ec8; font-size:13px; font-weight:700; }
+.client .title{ font-size:30px; font-weight:700; text-transform:capitalize;}
+.client .news-item:not(:last-child){ padding-bottom:0px; margin-bottom:0px;}
+.bro-btn{ font-size:13px;}
+section.register-section h3{font-size:35px; text-align:right; text-shadow: 0px 0px 8px rgba(150, 150, 150, 1); color:#ffffff;}
+section.register-section p{ font-size:17px; text-align:right;}
+.register-section form.form-register{ padding:20px 25px 20px 25px;}
+.client .events-item{ margin-bottom:0px;}
+.back-v{background: #e2e2e2 url("https://ims.gehlotclasses.com/public/frontend/images/back1.png") no-repeat fixed center; }
+.video-content h3{ font-size:43px;}
+.video-content p{ font-size:25px;}
+.class-back{background: #fcb514 url("https://ims.gehlotclasses.com/public/frontend/images/class1.png") no-repeat fixed center; }
+.btn-primary{ background:#fcb514; border-color:#fcb514; color:#000; }
+.client .single-testimonial .testimonial-text{ padding:10px 20px; text-align:center; text-transform:lowercase;}
+.client .single-testimonial .testimonial-text p{ margin-bottom:0px;}
+.client .single-testimonial .thumb{ margin-right:10px;}
+.client .single-testimonial h4{ margin-bottom:0px; font-size:22px; font-weight:700; color:#000;}
+.form-control{ border:1px solid #d6d6d6;}
+.wt{ width:100%;}
+.client .events-item .card .card-body{ padding:1.25rem 0rem 1.25rem 0rem; text-align:center;}
+.client .events-item .card .card-title{ margin-bottom:0px; font-weight:bold;}
+.col-12:nth-child(1) .adv-list, 
+.col-12:nth-child(2) .adv-list, 
+.col-12:nth-child(3) .adv-list, 
+.col-12:nth-child(4) .adv-list{ border:1px solid #c8ccce;}
+
+.client .events-item .card{-webkit-box-shadow: 0px 0px 5px 0px rgba(196,193,187,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(196,193,187,1);
+box-shadow: 0px 0px 5px 0px rgba(196,193,187,1);}
+
+.client .single-testimonial{ -webkit-box-shadow: 0px 0px 5px 0px rgba(196,193,187,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(196,193,187,1);
+box-shadow: 0px 0px 5px 0px rgba(196,193,187,1);}
+.client .testimonial-area .owl-nav{left:49.3%; bottom:-24px;}
+.course-card{ -webkit-box-shadow: 0px 0px 5px 0px rgba(196,193,187,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(196,193,187,1);
+box-shadow: 0px 0px 5px 0px rgba(196,193,187,1);}
+.adv-text{ text-align:center;}
+.container-fluid{ padding:0px;}
+.client .mapBox{ height:570px;}
+.client .banner-inner .banner-content p{ font-size:21px; line-height:30px; margin-bottom:16px;}
+.client .banner-area .banner-inner .banner-content h2{ color:#000;}
+.client .news-item .news-img img{ width:100%; }
+.client .news-item .news-img{width:100%; height:100%;}
+.client .academic-item .academic-text{ margin-top:10px; margin-bottom:0px;}
+.client .academics-area{margin-bottom:0px;}
+.client .academic-item .academic-text h4{ margin-bottom:0px;}
+.client .academic-item .academic-text h4 a{ font-weight:bold; color:#323232 !important;}
+.client.light .fact-area .white-box.single-summery, .client.color .fact-area .white-box.single-summery{ border:1px solid #c8ccce;}
+.title2{margin-bottom: 20px; letter-spacing: 0.5px; font-size: 25px; text-align: center; font-weight: 600; 
+text-transform: uppercase; color: #323232;}
+.client .info-area .info-content{ padding:20px;}
+.client .info-area .info-content h2{ color:#323232 !important; margin-bottom:10px;}
+.client .academic-item{ margin-bottom:0px;}
+.news-text{ text-align:center;}
+.news-text p{ margin-top:10px;}
+.client.light .header-area .navbar .nav .nav-item .nav-link, .client.color .header-area .navbar .nav .nav-item .nav-link{ font-weight:700; font-size:13px;} 
+.client .news-item .news-text{ padding:8px 0;}
+.client .events-item .card .card-body .date{ font-size:13px;}
+
+.adv-list{position:relative; overflow:hidden;}
+.adv-list:after{ position:absolute; width:200px; height:200px; content: " "; left:0px; top:0px; background:url("https://ims.gehlotclasses.com/public/frontend/images/after.png")no-repeat;}
+.adv-list:before{ position:absolute; width:78px; height:70px; content: " "; bottom:0px; right:0px; background:url("https://ims.gehlotclasses.com/public/frontend/images/before.png")no-repeat;}
+.advantage-area{position:relative;}
+.advantage-area:before{ position:absolute; width:358px; height:346px; content: " "; bottom:0px; right:0px; background:url("https://ims.gehlotclasses.com/public/frontend/images/education.png")no-repeat;}
+
+</style>
 </body>
 </html>
 

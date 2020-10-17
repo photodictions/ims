@@ -35,6 +35,7 @@
 
     <!--================ Start Header Menu Area =================-->
     <header class="header-area">
+	
         <div class="main_menu">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container box-1420">
@@ -79,5 +80,6 @@
                 </div>
             </nav>
         </div>
+	
     </header>
     <!--================ End Header Menu Area =================-->

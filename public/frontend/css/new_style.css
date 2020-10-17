@@ -35,10 +35,8 @@
          color:#323232;
          
      }
-     .client .header-area .navbar .nav .nav-item .nav-link{
-        font-size:16px;
-    }
-    .client.light .header-area .navbar .nav .nav-item .nav-link, .client.color .header-area .navbar .nav .nav-item .nav-link{
+     .client .header-area .navbar .nav .nav-item .nav-link{font-size:14px;} 
+	 .client.light .header-area .navbar .nav .nav-item .nav-link, .client.color .header-area .navbar .nav .nav-item .nav-link{
         color:#323232;
     }
     .btn{
@@ -195,7 +193,7 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
     font-weight: 600;
     text-transform:uppercase;
-    margin-bottom:30px;
+    margin-bottom:0px;
 }
 section.news-area .news-list {
     height: calc(100% - 1rem);
@@ -406,3 +404,5 @@ section.news-area .news-list {
 .col-12:nth-child(4) .adv-list{
     background:rgba(228, 71, 85, 0.3);
 }
+
+

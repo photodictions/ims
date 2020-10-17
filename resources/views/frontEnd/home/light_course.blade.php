@@ -4,7 +4,7 @@
 @endpush
 @section('main_content')
     <!--================ Home Banner Area =================-->
-    <section class="container box-1420">
+    <section class="container-fluid">
         <div class="banner-area" style="background: linear-gradient(0deg, rgba(124, 50, 255, 0.6), rgba(199, 56, 216, 0.6)), url({{$coursePage->image != ""? $coursePage->image : '../img/client/common-banner1.jpg'}}) no-repeat center;">
             <div class="banner-inner">
                 <div class="banner-content">
@@ -24,7 +24,7 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h3 class="title">Course List</h3>
+                            <h3 class="title2">Course List</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -34,7 +34,7 @@
                                 <div class="academic-img">
                                     <img class="img-fluid" src="{{asset($value->image)}}" alt="">
                                 </div>
-                                <div class="academic-text">
+                                <div class="academic-text text-center">
                                     <h4>
                                         <a href="{{url('course-Details/'.$value->id)}}">{{$value->title}}</a>
                                     </h4>
@@ -62,7 +62,7 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h3 class="title">Latest News</h3>
+                            <h3 class="title2 mt-20">Latest News</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -70,10 +70,10 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="news-item">
                                 <div class="news-img">
-                                    <img class="img-fluid w-100 news-image" src="{{asset($value->image)}}" alt="">
+                                    <img src="{{asset($value->image)}}" alt="">
                                 </div>
                                 <div class="news-text">
-                                    <p class="date">                                                                            
+                                    <p>                                                                            
                                         {{$value->publish_date != ""? App\SmGeneralSettings::DateConvater($value->publish_date):''}}
                                     </p>
                                     <h4>

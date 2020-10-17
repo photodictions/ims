@@ -1,6 +1,6 @@
 <?php $__env->startSection('main_content'); ?>
     <!--================ Home Banner Area =================-->
-    <section class="container box-1420">
+    <section class="container-fluid">
         <div class="banner-area" style="background: linear-gradient(0deg, rgba(124, 50, 255, 0.6), rgba(199, 56, 216, 0.6)), url(<?php echo e($contact_info->image != ""? $contact_info->image : '../img/client/common-banner1.jpg'); ?>) no-repeat center;">
 
             <div class="banner-inner">
@@ -20,7 +20,7 @@
    <section class="contact_area section-gap-top">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-8">
                     <!-- <div id="mapBox" class="mapBox" 
                         data-lat="23.707310" 
                         data-lon="90.415480" 
@@ -31,7 +31,7 @@
                     </div> -->
                     <div class="map mapBox"></div>
                 </div>
-                <div class="offset-lg-1 col-lg-5">
+                <div class="col-lg-4">
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="ti-home"></i>
@@ -107,7 +107,7 @@
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="col-md-12 mt-30">
+                        <div class="col-md-12 mt-10 mb-20">
                             <button type="submit" value="submit" class="primary-btn fix-gr-bg">
                                 Send Message
                             </button>
@@ -138,6 +138,7 @@
       });
 
 </script>
+<link rel="stylesheet" href="https://ims.gehlotclasses.com/public/frontend/css/new_style.css"/>	
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('frontEnd.home.front_master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/gehlotclasses/public_html/ims.gehlotclasses.com/resources/views/frontEnd/home/light_contact.blade.php ENDPATH**/ ?>

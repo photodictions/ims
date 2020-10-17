@@ -76,13 +76,13 @@
 	
  <!--================start course =================-->
     <section class="px-md-5 px-0 section-gap">
-        <div class="container-fluid">
-            <div class="py-3">
+        <div class="container">
+            
                 <h3 class="main-title">CLASSROOM COURSES</h3>
-            </div>
+            
             <div class="row">
                 <?php $__currentLoopData = $academics; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $academic): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 d-flex bd-highlight">
                         <div class="course-card my-3 p-sm-4 px-0">
                             <div class="course-icon">
                                 <img src="<?php echo e(asset($academic->image)); ?>">
@@ -128,7 +128,7 @@
     <!--================End Course =================-->
     <!--================start Result =================-->
         <section class="px-md-5 px-0 section-gap bg-primary result-section">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                     <div class="result-card d-flex align-items-center p-sm-4 ">
@@ -170,18 +170,18 @@
     <!--================End Result =================-->
     <!--================ News Area =================-->
     <section class="news-area section-gap px-md-5 px-0">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row align-items-stretch">
                 <?php if(isset($per["Event List"])): ?>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-12">
-                    <div class="news-list pr-md-4 pr-0 py-3 mb-3">
-                        <div class="border-bottom mb-4 pb-2">
+                    <div class="news-list p-md-3">
+                        <div class="border-bottom">
                             <div class="row align-items-center">
                                 <div class="col-xl-6 col-lg-6 col-md-7 col-12">
                                     <h3 class="title mb-0">Latest Events</h3>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-5 col-12 text-md-right text-left mb-30-lg">
-                                    <a href="" class="primary-btn small fix-gr-bg">Browse All</a>
+                                    <a href="" class="Bro-btn">Browse All <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -190,7 +190,7 @@
                         <?php $__currentLoopData = $events; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $event): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <div class="news-item">
                                     <!--<img class="card-img-top" class="img-fluid" src="<?php echo e(asset($event->uplad_image_file)); ?>" alt="">-->
-                                    <div class="news-text">
+                                    <div class="news-text text-left">
                                         <!--<p class="card-text">
                                             <?php echo e($event->event_location); ?>
 
@@ -210,8 +210,8 @@
     <?php endif; ?>
                 <?php if(isset($per["Notice Board"])): ?>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-12 notice-board-area">
-                    <div class="news-list pl-md-4 pl-0 py-3 mb-3">
-                        <div class="border-bottom mb-4 pb-2">
+                    <div class="news-list p-md-3">
+                        <div class="border-bottom">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <h3 class="title mb-0">Notice Board</h3>
@@ -250,7 +250,7 @@
                                  
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                 <div class="news-item">
-                            <div class="news-text">
+                            <div class="news-text text-left">
                                 <p class="date pb-0"><i class="fa fa-calendar" aria-hidden="true"></i> 2nd Jun, 2019</p>
                                 <h4>
                                     <a href="https://ims.gehlotclasses.com/news-details/11">
@@ -277,17 +277,16 @@
 
     <!--================End News Area =================-->
    <!--================ start resgister form =================-->
-   <section class="register-section section-gap px-md-5 px-0">
-       <div class="container-fluid">
+   <section class="register-section section-gap px-md-5 px-0 class-back">
+       <div class="container">
            <div class="row align-items-center">
-               <div class="col-xl-7 col-lg-7 col-md-6 col-12">
+               <div class="col-xl-5 col-lg-7 col-md-6 col-12">
                    <div class="">
-                        <h1>NEW STUDENTS</h1>
-                        <h3>JOIN EVERY WEEK</h3>
-                        <h6>Seats are limited and filling very fast . Register now</h6>
+                        <h3>NEW STUDENTS JOIN EVERY WEEK</h3>
+                        <p>Seats are limited and filling very fast . Register now</p>
                    </div>
                </div>
-               <div class="col-xl-5 col-lg-5 col-md-6 col-12">
+               <div class="col-xl-7 col-lg-5 col-md-6 col-12">
                    <form class="form-register">
                        <div class="form-group">
                             <input type="name" class="form-control" placeholder="Name">
@@ -301,7 +300,7 @@
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="City">
                         </div>
-                        <div class="text-center mt-3">												
+                        <div class="text-center mt-3 text-sm-left wt">												
                             <button class="btn btn-primary" type="button">Register Now</button>
                         </div>
                     </form>
@@ -318,15 +317,15 @@
    <?php if(isset($per["Latest News"])): ?>
     
     <section class="events-area section-gap bg-light px-md-5 px-0">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row mb-40">
                         <div class="col-lg-6 col-md-7">
-                            <h3 class="title">Event List</h3>
+                            <h3 class="main-title text-sm-left">Event List</h3>
                         </div>
                         <div class="col-lg-6 col-md-5 text-md-right text-left mb-30-lg">
-                            <a href="<?php echo e(url('news-page')); ?>" class="primary-btn small fix-gr-bg">Browse All</a>
+                            <a href="<?php echo e(url('news-page')); ?>" class="Bro-btn">Browse All <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="row">
@@ -362,13 +361,13 @@
     </section>
     <?php endif; ?>
     <!--================start Video =================-->
-    <section class="px-md-4 px-0 section-gap">
-        <div class="container-fluid">
+    <section class="px-md-4 px-0 section-gap back-v">
+        <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="video-content">
                         <h3>Motivational speech by achievers of</h3>
-                        <h2>GEHLOT CLASSES </h2>
+                        <p>GEHLOT CLASSES</p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -447,19 +446,21 @@ End Events Area =================-->
                                 <?php echo e($value->description); ?>
 
                             </p>
-                            <div class="d-flex">
-                                <div class="thumb">
-                                    <?php if(!empty($value->image)): ?>
+                            
+							<div class="d-flex justify-content-center">
+							<div class="p-2 bd-highlight">
+							<?php if(!empty($value->image)): ?>
                                     <img class="img-fluid rounded-circle testimonial-image" src="<?php echo e(asset($value->image)); ?>" alt="">
                                         <?php else: ?>
                                         <img class="img-fluid rounded-circle" src="<?php echo e(asset('public/uploads/sample.jpg')); ?>" alt="">
                                         <?php endif; ?>
-                                </div>
-                                <div class="meta text-left">
-                                    <h4><?php echo e($value->name); ?></h4>
-                                    <p><?php echo e($value->designation); ?>, <?php echo e($value->institution_name); ?></p>
-                                </div>
-                            </div>
+							</div>
+							<div class="p-2 bd-highlight text-sm-left">
+							<h4><?php echo e($value->name); ?></h4>
+							<p><?php echo e($value->designation); ?>, <?php echo e($value->institution_name); ?></p></div>
+							</div>
+							
+							
                             </div>
                         </div>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -471,7 +472,7 @@ End Events Area =================-->
 
     <!--================ End Testimonial Area =================-->
     <!--================ Start Advantages Area =================-->
-    <section class="advantage-area section-gap ">
+    <section class="advantage-area">
         <div class="container">
             <div class="pb-3">
                 <h3 class="main-title">Gehlot Advantages</h3>

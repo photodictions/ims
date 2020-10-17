@@ -1,4 +1,4 @@
-@php $page_title="All about Infix School management system; School management software"; @endphp
+@php $page_title="All about gehlot classes School management system; School management software"; @endphp
 @extends('frontEnd.home.front_master')
 @push('css')
     <link rel="stylesheet" href="{{asset('public/')}}/frontend/css/new_style.css"/>
@@ -6,7 +6,7 @@
 @section('main_content')
 
     <!--================ Home Banner Area =================-->
-    <section class="container box-1420">
+    <section class="container-fluid">
         <div class="banner-area" style="background: linear-gradient(0deg, rgba(124, 50, 255, 0.6), rgba(199, 56, 216, 0.6)), url({{$about->image != ""? $about->image : '../img/client/common-banner1.jpg'}}) no-repeat center;" >
             <div class="banner-inner">
                 <div class="banner-content">
@@ -86,7 +86,7 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h3 class="title">Our History</h3>
+                            <h3 class="title2">Our History</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -96,7 +96,7 @@
                                 <div class="academic-img">
                                     <img class="img-fluid" src="{{asset($value->image)}}" alt="">
                                 </div>
-                                <div class="academic-text">
+                                <div class="academic-text text-center">
                                     <h4>
                                         <a href="{{url('news-details/'.$value->id)}}">{{$value->news_title}}</a>
                                     </h4>
@@ -104,7 +104,7 @@
                                         {{$value->news_body}}
                                     </p>
                                     <div>
-                                        <a href="{{url('news-details/'.$value->id)}}" class="client-btn">Read More</a>
+                                        <a href="{{url('news-details/'.$value->id)}}" class="btn btn-dark">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +146,7 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h3 class="title">Our Mission and Vision</h3>
+                            <h3 class="title2">Our Mission and Vision</h3> 
                         </div>
                     </div>
                     <div class="row">
@@ -156,7 +156,7 @@
                                 <div class="academic-img">
                                     <img class="img-fluid" src="{{asset($value->image)}}" alt="">
                                 </div>
-                                <div class="academic-text">
+                                <div class="academic-text text-center"> 
                                     <h4>
                                         <a href="{{url('news-details/'.$value->id)}}">{{$value->news_title}}</a>
                                     </h4>
@@ -164,7 +164,7 @@
                                         {{$value->news_body}}
                                     </p>
                                     <div>
-                                        <a href="{{url('news-details/'.$value->id)}}" class="client-btn">Read More</a>
+                                        <a href="{{url('news-details/'.$value->id)}}" class="btn btn-dark">Read More</a>
                                     </div>
                                 </div>
                             </div>

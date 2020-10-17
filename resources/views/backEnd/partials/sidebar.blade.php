@@ -1032,7 +1032,7 @@
             @endif --}}
 
             @if(@in_array(398, App\GlobalVariable::GlobarModuleLinks()) || Auth::user()->role_id == 1)
-             <!-- Sumit Comment 3   <li>
+                <li>
                     <a href="#subMenusystemSettings" data-toggle="collapse" aria-expanded="false"
                        class="dropdown-toggle">
                         <span class="flaticon-settings"></span>
@@ -1175,7 +1175,7 @@
 
             @if(App\SmGeneralSettings::isModule('Saas')== FALSE)
            @if(@in_array(485, App\GlobalVariable::GlobarModuleLinks()) || Auth::user()->role_id == 1)
-               <!--Sumit Comment one <li>
+ <li>
                     <a href="#subMenusystemStyle" data-toggle="collapse" aria-expanded="false"
                        class="dropdown-toggle">
                         <span class="flaticon-settings"></span>
@@ -1195,12 +1195,12 @@
                             </li>
                         @endif
                     </ul>
-                </li> -->
+                </li>
             @endif
 @endif
             
 
-           {{-- <!-- @if(in_array(20, $main_modules))
+           {{--  @if(in_array(20, $main_modules))
 
             @if(in_array(18, $modules) || Auth::user()->role_id == 1)
                 <li>
@@ -1220,11 +1220,11 @@
                 </li>
             @endif
 
-            @endif --> --}}
+            @endif  --}}
             @if(App\SmGeneralSettings::isModule('Saas')== FALSE)
                 @if(@in_array(492, App\GlobalVariable::GlobarModuleLinks()) || Auth::user()->role_id == 1)
 
-                 <!--   <li>
+                   <li>
                         <a href="#subMenufrontEndSettings" data-toggle="collapse" aria-expanded="false"
                         class="dropdown-toggle">
                             <span class="flaticon-software"></span>
@@ -1302,7 +1302,7 @@
                             </li>
                             @endif
                         </ul>
-                    </li> SUMIT Comment 2 -->
+                    </li> 
                 @endif
             @endif
 
