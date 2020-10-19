@@ -128,7 +128,7 @@
                             <a class="nav-link" href="javascript:void(0)">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Blog</a>
+                            <a class="nav-link" href="{{url('/')}}/blog">Blog</a>
                         </li>
                         <li class="nav-item {{Request::path() == 'contact'? 'active':''}}">
                             <a class="nav-link" href="{{url('/')}}/contact">Contact</a>

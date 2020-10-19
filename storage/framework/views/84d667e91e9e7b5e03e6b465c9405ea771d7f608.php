@@ -128,7 +128,7 @@
                             <a class="nav-link" href="javascript:void(0)">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Blog</a>
+                            <a class="nav-link" href="<?php echo e(url('/')); ?>/blog">Blog</a>
                         </li>
                         <li class="nav-item <?php echo e(Request::path() == 'contact'? 'active':''); ?>">
                             <a class="nav-link" href="<?php echo e(url('/')); ?>/contact">Contact</a>
